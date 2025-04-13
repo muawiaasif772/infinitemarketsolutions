@@ -1,0 +1,236 @@
+.team-slider-container {
+  
+}
+.carousel-track-team{
+  height: 450px;
+}
+.swiper-slide-active img {
+  margin-bottom: 0; /* Remove unnecessary space */
+}
+.team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s ease;
+  opacity: 0.5;
+  /* transform: scale(0.9); */
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+  gap: 1px;
+}
+
+.team-card.active {
+  opacity: 1;
+  /* transform: scale(1); */
+}
+
+.team-card .team-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.5s ease, width 0.5s ease, height 0.5s ease;
+  margin-bottom: 0px;
+}
+
+.team-name {
+  font-size: 14px;
+  font-weight: semibold;
+  color: white;
+  transition: all 0.5s ease;
+  background:#01a2fa;
+  border-radius:21px ;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  
+}
+
+.team-name.active {
+  font-size: 18px;
+  font-weight: bold;
+  /* color: #38bdf8; */
+}
+
+.team-role {
+  font-size: 12px;
+  color: #94a3b8;
+  transition: all 0.5s ease;
+  position: relative;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.team-des.active{
+  color: black ;
+  opacity: 0.8;
+
+}
+/* Adding a dynamic divider with a pseudo-element */
+.team-role::after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  bottom: 3px;
+  /*Spacebetweentextanddivider*/width: 50%;
+  height: 2px;
+  /*Dividerthickness*/background-color: #01a2fa;
+  transition: all 0.3s ease;
+ 
+}
+
+
+.team-role.active {
+  font-size: 14px;
+  color: #000;
+}
+
+
+.team-des {
+ 
+ text-align: center;
+ font-size: 13px;
+ font-weight: 300;
+ font-family: Manrope;
+ line-height: 1.5;
+ margin-top: 3px !important;
+ /* font-weight: lighter; */
+}
+.mySwiper {
+  width: 80%;
+  margin: auto;
+}
+@media(max-width:940px) {
+	.team-des{
+		height:auto ;
+		padding-bottom: 12px;
+	}}
+@media(max-width:768px) {
+	.team-des{
+		height:auto ;
+		/* padding-bottom: 12px; */
+	}
+  .team-card{
+    padding: 10px;
+  }
+
+  .mySwiper{
+    width: 100% !important;
+  }
+	.swiper-slide{
+		/* padding-bottom: 133px; */
+	}
+  
+	.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: -5px !important;
+  left: 0;
+  width: 100%;
+  padding-top: -2px;
+  /* margin-top: 22px; */
+}
+}
+
+@media(max-width:480px) {
+	.team-des{
+		height:auto ;
+		/* padding-bottom: 12px; */
+	}
+  .team-card{
+    width: 300px;
+    height: 300px;
+  }
+	.swiper-slide{
+		/* padding-bottom: 133px; */
+	}
+  .team-name {
+    font-size: 12px;
+    font-weight: semibold;
+    color: white;
+    transition: all 0.5s ease;
+    background:#01a2fa;
+    border-radius:21px ;
+    padding: 5px 8px;
+    /*min-width: 150px;
+     */     
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+  .carousel-track-team{
+    height: 400px;
+  }
+	.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  padding-top: -5px;
+  /* margin-top: 22px; */
+}
+}
+.swiper-pagination-bullet-active {
+  background-color: #01a2fa !important;
+  /* border: 2px solid #561da0 !important; */
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  -ms-border-radius: 50% !important;
+  -o-border-radius: 50% !important;
+}
+.team-des.active {
+  color: black;
+}
+
+ .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* margin-top: 22px; */
+}
+
+.team-card {
+  background-color: transparent;
+  /*Default:;
+  Nobackground*/transition: background-color 0.3s ease-in-out;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: visible;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out;
+  -ms-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+}
+
+/* Default state for non-active slides */
+.swiper-slide:not(.swiper-slide-active) img {
+  opacity: 0.5;
+  /* filter: blur(4px); */
+}
+
+/* Active slide styling */
+.swiper-slide-active img {
+  opacity: 1;
+  filter: none;
+  scale: 1.4;
+  margin-bottom: 23px;
+}
+.team-content {
+  transition: all 0.5s ease-in-out;
+}
+
+/* .swiper-slide:not(.swiper-slide-active) .team-content {
+	transition: all 0.5s ease;
+	  opacity: 0.5;
+	  transform: scale(0.9);
+	  transition: transform 0.5s ease, opacity 0.5s ease;
+  } */

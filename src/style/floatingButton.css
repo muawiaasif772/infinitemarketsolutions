@@ -1,0 +1,9 @@
+.tooltip-content {
+	pointer-events: auto; /* Allows interaction with the tooltip */
+  }
+  
+  button[data-tooltip-id="whatsapp-tooltip"]:hover + .tooltip-content,
+  .tooltip-content:hover {
+	visibility: visible;
+	opacity: 1;
+  }

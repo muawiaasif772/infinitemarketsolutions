@@ -1,0 +1,41 @@
+.carouselWrapper {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* padding: 10px 0; */
+  position: relative;
+  max-height: 80px;
+  padding: 0;
+  margin: 0;
+}
+
+.logoTrack {
+  display: flex;
+  gap: 60px;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+  -webkit-animation: scroll 30s linear infinite;
+}
+
+
+.logoWrapper {
+  width: 64px;
+  /* flex-shrink: 0; */
+}
+
+.logoWrapper img {
+  width: 100%;
+  height: auto;
+   aspect-ratio: 1.1;
+}
+
+/* Continuous Scrolling Animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

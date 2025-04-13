@@ -1,0 +1,363 @@
+.contactSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ctaBanner {
+    color: #fff;
+    flex-direction: column;
+    align-self: stretch;
+    width: 100%;
+    min-height: 472px;
+    margin-top: 104px;
+    font-family:
+      Roboto,
+      -apple-system,
+      Helvetica,
+      sans-serif;
+    display: flex;
+    position: relative;
+  }
+  
+  @media (width<=991px) {
+    .ctaBanner {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  
+  .bannerBackground {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+  }
+  
+  .bannerContent {
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    padding: 53px 80px;
+    display: flex;
+    position: relative;
+  }
+  
+  @media (width<=991px) {
+    .bannerContent {
+      max-width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  
+  .bannerTitle {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 400;
+    margin: 0;
+  }
+  
+  @media (width<=991px) {
+    .bannerTitle {
+      font-size: 40px;
+    }
+  }
+  
+  .bannerSubtitle {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 0;
+  }
+  
+  @media (width<=991px) {
+    .bannerSubtitle {
+      max-width: 100%;
+      font-size: 40px;
+    }
+  }
+  
+  .bannerDescription {
+    margin-top: 24px;
+    font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
+  
+  @media (width<=991px) {
+    .bannerDescription {
+      max-width: 100%;
+    }
+  }
+  
+  .contactButton {
+    color: #2aabe3;
+    background-color: #fff;
+    border: 3px solid #fff;
+    border-radius: 102px;
+    margin-top: 38px;
+    padding: 20px 50px;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  @media (width<=991px) {
+    .contactButton {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  
+  .contactForm {
+    background-color: #fff;
+    border: 1px solid #0000001a;
+    border-radius: 20px;
+    width: 1332px;
+    max-width: 100%;
+    margin-top: 85px;
+    padding: 20px 49px 20px 20px;
+  }
+  
+  @media (width<=991px) {
+    .contactForm {
+      margin-top: 40px;
+      padding-right: 20px;
+    }
+  }
+  
+  .formContainer {
+    gap: 20px;
+    display: flex;
+  }
+  
+  @media (width<=991px) {
+    .formContainer {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  }
+  
+  .formInfo {
+    flex-direction: column;
+    align-items: stretch;
+    width: 42%;
+    margin-left: 0;
+    line-height: normal;
+    display: flex;
+  }
+  
+  @media (width<=991px) {
+    .formInfo {
+      width: 100%;
+    }
+  }
+  
+  .infoContent {
+    color: #fff;
+    border-radius: 20px;
+    flex-direction: column;
+    flex-grow: 1;
+    min-height: 559px;
+    font-family:
+      Roboto,
+      -apple-system,
+      Helvetica,
+      sans-serif;
+    display: flex;
+    position: relative;
+  }
+  
+  @media (width<=991px) {
+    .infoContent {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  
+  .infoBackground {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+  }
+  
+  .infoText {
+    background-color: #0009;
+    border-radius: 20px;
+    padding: 55px 36px 235px;
+    position: relative;
+  }
+  
+  @media (width<=991px) {
+    .infoText {
+      max-width: 100%;
+      padding-bottom: 100px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  
+  .infoTitle {
+    margin-right: 25px;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 66px;
+    margin-top: 0;
+  }
+  
+  @media (width<=991px) {
+    .infoTitle {
+      max-width: 100%;
+      margin-right: 10px;
+      font-size: 40px;
+      line-height: 59px;
+    }
+  }
+  
+  .infoDescription {
+    margin-top: 14px;
+    margin-bottom: -47px;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 41px;
+  }
+  
+  @media (width<=991px) {
+    .infoDescription {
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  .formFields {
+    flex-direction: column;
+    align-items: stretch;
+    width: 58%;
+    margin-left: 20px;
+    line-height: normal;
+    display: flex;
+  }
+  
+  @media (width<=991px) {
+    .formFields {
+      width: 100%;
+    }
+  }
+  
+  .formContent {
+    flex-direction: column;
+    align-self: stretch;
+    align-items: stretch;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+  }
+  
+  @media (width<=991px) {
+    .formContent {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  
+  .fieldLabel {
+    color: #000;
+    align-self: start;
+    font-family:
+      Roboto,
+      -apple-system,
+      Helvetica,
+      sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 66px;
+  }
+  
+  .inputField {
+    background-color: #f5f5f5;
+    border-radius: 11px;
+    flex-shrink: 0;
+    height: 70px;
+    display: flex;
+  }
+  
+  @media (width<=991px) {
+    .inputField {
+      max-width: 100%;
+    }
+  }
+  
+  .fieldRow {
+    color: #000;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    width: 456px;
+    max-width: 100%;
+    margin-top: 10px;
+    font-family:
+      Roboto,
+      -apple-system,
+      Helvetica,
+      sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 66px;
+    display: flex;
+  }
+  
+  .fieldRowInputs {
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 12px;
+    display: flex;
+  }
+  
+  .inputFieldHalf {
+    background-color: #f5f5f5;
+    border-radius: 11px;
+    flex-shrink: 0;
+    width: 344px;
+    max-width: 100%;
+    height: 70px;
+    display: flex;
+  }
+  
+  .submitButton {
+    z-index: 10;
+    color: #fff;
+    white-space: nowrap;
+    background-color: #04a5e9;
+    border-radius: 90px;
+    align-self: center;
+    /* width: 198px; */
+    /* max-width: 100%; */
+    margin-top: 38px;
+  
+    font-family:Nunito;
+     
+    font-size: 24px !important;
+    font-weight: 400;
+    line-height: 66px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @media (width<=991px) {
+    .submitButton {
+      white-space: initial;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  

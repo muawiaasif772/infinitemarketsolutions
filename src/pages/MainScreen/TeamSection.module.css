@@ -1,0 +1,144 @@
+/* Container styling */
+.container {
+  width: 100%;
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
+  /* padding: 20px 0; */
+  /* box-sizing: border-box; */
+  padding:20px 75px
+}
+
+/* Team header section */
+.team_head_description {
+ 
+  /* padding: 20px 50px; */
+  text-align: start;
+}
+
+.heading {
+  padding-top: 25px;
+  color: #19191b;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: Manrope, sans-serif;
+  margin-bottom: 16px;
+}
+
+.description {
+  color: #5a5c62;
+  margin: 16px auto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  font-family: Nunito, sans-serif;
+  /* max-width: 800px; */
+  /* padding: 0 16px; */
+}
+
+/* Button styling */
+.buttonContainer {
+  display: flex;
+  /* justify-content: center; */
+  gap: 16px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.secondaryButton, .primaryButton {
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  /*min-height: 40px;
+  */padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  border: none;
+ 
+  cursor: pointer;
+  
+}
+
+.secondaryButton {
+  color: #19191b;
+  background-color: #f8f8f8 !important;
+}
+
+.primaryButton {
+  color: white;
+  background-color: #01a2fa !important;
+}
+
+.buttonText {
+  display: inline-flex;
+  align-items: center;
+}
+
+.secondaryButtonIcon {
+  color: #19191b;
+  margin-left: 8px;
+}
+
+.primaryButtonIcon {
+  color: white;
+  margin-left: 8px;
+}
+
+/* Team card section */
+.carousel-track-team {
+  height: 450px;
+}
+@media (max-width: 1024px) {
+.container{
+  padding: 20px 64px;
+}
+}
+@media (max-width: 768px) {
+  .team_head_description{
+   padding: 10px 20px;
+  }
+  .container{
+    padding: 0;
+  }
+  .heading {
+    font-size: 18px;
+  }
+  .description {
+    font-size: 12px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  
+  .container{
+    padding: 10px 20px ;
+  }
+  .buttonContainer {
+    display: flex;
+    /* justify-content: center; */
+    gap: 6px;
+   
+  }
+  
+  .secondaryButton, .primaryButton {
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+   
+    gap: 8px;
+    /*min-height: 40px;
+    */padding: 12px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    border: none;
+    cursor: pointer;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+}

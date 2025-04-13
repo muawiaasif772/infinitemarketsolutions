@@ -1,0 +1,113 @@
+.team-section {
+  text-align: center;
+  padding: 3rem 100px;
+  background-color: #FBFBFB;
+}
+
+.team-section h2 {
+  font-size: 25px;
+  font-family: Manrope;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.team-section p {
+  color:#000;
+  font-family: Nunito;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 15px;
+}
+
+.team-cardss {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.team-cardss img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+
+.team-info {
+  position: absolute;
+  bottom: 10px;
+  left: 5px;
+  width: 95%;
+  padding: 1rem 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(66, 181, 248, 0.5); /* semi-transparent blue */
+  backdrop-filter: blur(10px); /* blur effect */
+  border-radius: 20px;
+  color: #fff;
+  gap: 2px;
+}
+
+
+.team-text {
+  text-align: left;
+}
+
+.team-text h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.team-text p {
+  margin: 0;
+  font-size: 12px;
+  opacity: 0.9;
+  color: white;
+}
+
+.team-divider {
+  height: 40px;
+  width: 2px;
+  background-color:#fff;
+  opacity: 0.6;
+}
+
+.team-icons {
+  display: flex; /* Ensure icons are displayed horizontally */
+  gap: 0.5rem; /* Space between icons */
+}
+
+.team-icons img{
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  color: white;
+  cursor: pointer;
+ 
+}
+
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: #e4e4e4;
+}
+
+
+@media (max-width: 480px) {
+  .team-section {
+    padding: 20px 30px;
+    margin: auto;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 5px;
+  }
+}

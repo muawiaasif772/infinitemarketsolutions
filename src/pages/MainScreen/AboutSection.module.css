@@ -1,0 +1,266 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+h1, h2, h3, p {
+  padding: 0;
+  margin: 0;
+}
+
+.aboutContainer {
+  display: flex;
+  /* justify-content: space-between; Center the container */
+  align-items: center;
+  /* max-width: 1400px; */
+  /* margin: 0 auto; */
+  padding-top: 50px !important ; 
+  gap: 10%; 
+  padding-left:80px !important
+  /* box-sizing: border-box; */
+}
+
+.aboutContent {
+  width: 67.5%; 
+  /* max-width: 850px; */
+}
+
+.sectionTitle {
+  color: #00a3f7;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1;
+  font-family: Manrope;
+  text-align: left;
+}
+
+.mainHeading {
+  color: #061e42;
+  margin-top: 10px;
+  font-size: 28px;
+  margin-bottom: 25px;
+  font-weight: 800;
+  font-family: Nunito;
+  text-align: left;
+}
+
+.description {
+  color: #6e6a74;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0%;
+  font-family: Nunito;
+  text-align: left;
+}
+
+.description br {
+  display: none;
+}
+
+.featuresContainer {
+  width: 100%;
+  margin-top: 18px;
+}
+
+.featuresColumn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.featureItem {
+  color: #061e42;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  font-family: Nunito;
+  font-size: 14px;
+}
+
+.featureIcon {
+  width: 24px;
+  height: auto;
+}
+
+.featureText {
+  flex-basis: auto;
+}
+
+.contactInfo {
+  width: 100%;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+.contactRow {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.contactIcon {
+  height: 50px;
+  width: auto;
+  border-radius: 11px;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactLabel {
+  color: #061e42;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.phoneNumber {
+  color: #00a3f7;
+  font-weight: 400;
+}
+
+.quoteButton {
+  color: #fff;
+  background-color: #00a3f7;
+  border-radius: 10px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  font-family: Ubuntu, Helvetica, sans-serif;
+  font-size: 14px;
+  padding: 10px 30px;
+  display: inline-block;
+}
+
+
+
+.aboutImage {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  margin-left:auto ;
+}
+
+/* Laptop and Desktop */
+@media (min-width: 1024px) {
+  .aboutContainer {
+    padding: 0 64px; 
+  }
+  
+  .aboutImage {
+    max-height: 400px;
+  }
+}
+
+/* Tablet devices */
+@media (max-width: 1024px) {
+  .aboutContainer {
+    /* padding: 0 5%; */
+    padding: 0 64px;
+  }
+  
+  .aboutContainer {
+    gap: 4%;
+  }
+  
+  .mainHeading {
+    font-size: 24px;
+  }
+  
+  .aboutImage {
+    max-height: 350px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .aboutContainer {
+    flex-direction: column-reverse;
+    gap: 30px;
+    padding: 0 60px  ;
+  }
+  .aboutSection{
+    /* padding: 0 64px; */
+  }
+  .aboutContent, .imageColumn {
+    width: 100%;
+    max-width: 100%;
+    padding: 0; /* Remove individual padding */
+    box-sizing: border-box;
+  }
+  
+  .sectionTitle {
+    font-size: 22px;
+    text-align: left;
+  }
+  
+  .mainHeading {
+    font-size: 20px;
+    text-align: left;
+  }
+  
+  .description {
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  .featuresColumn {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+    justify-items: flex-start;
+  }
+  
+  .featureItem {
+    justify-content: flex-start;
+    width: 100%;
+  }
+  
+  .contactRow {
+    justify-content: flex-start;
+  }
+  
+  .quoteButton {
+    width: auto;
+    padding: 12px 30px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .imageColumn {
+    justify-content: center;
+  }
+  
+  .aboutImage {
+    max-height: 350px;
+    object-fit: contain;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .aboutContainer{
+    padding: 20px 30px !important;
+  }
+  
+  .mainHeading {
+    font-size: 18px;
+  }
+  
+  .aboutImage {
+    max-height: 250px;
+  }
+  
+  .quoteButton {
+    width: auto;
+  }
+}

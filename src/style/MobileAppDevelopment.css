@@ -1,0 +1,146 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Droid%20Sans");
+
+/* Main Section */
+.app-dev-section {
+    font-family: "Roboto", sans-serif;
+    padding: 20px 100px;
+}
+
+/* Headings */
+.app-dev-section h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/* Vertical Divider */
+.vertical-divider {
+    height: 230px;
+    margin-right: 20px;
+    width: 4px;
+    background-color: #02A2E7;
+}
+
+/* Top Section Layout */
+.top-section-mobile-app {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+
+.top-section-mobile-app-inter {
+    width: 65%;
+}
+
+/* Images */
+.top-section-mobile-app img {
+    height: 350px;
+    max-width: 100%;
+}
+
+/* Paragraphs */
+.app-dev-section p {
+    font-size: 18px;
+}
+
+/* Headings */
+.top-section-mobile-app-inter h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.top-section-mobile-app-inter p {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.app-dev-section h3 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .app-dev-section {
+        padding: 20px 50px;
+    }
+
+    .top-section-mobile-app {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .top-section-mobile-app img {
+        height: auto;
+        max-width: 80%;
+    }
+
+    .top-section-mobile-app-inter {
+        width: 100%;
+    }
+
+    .vertical-divider {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .app-dev-section {
+        padding: 20px;
+    }
+
+    .app-dev-section h2 {
+        font-size: 26px;
+    }
+
+    .app-dev-section p {
+        font-size: 16px;
+    }
+
+    .top-section-mobile-app {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .top-section-mobile-app-inter h1 {
+        font-size: 32px;
+    }
+
+    .top-section-mobile-app-inter p {
+        font-size: 20px;
+    }
+
+    .top-section-mobile-app img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-dev-section {
+        padding: 15px;
+    }
+
+    .app-dev-section h2 {
+        font-size: 22px;
+    }
+
+    .app-dev-section p {
+        font-size: 14px;
+    }
+
+    .top-section-mobile-app-inter h1 {
+        font-size: 28px;
+    }
+
+    .top-section-mobile-app-inter p {
+        font-size: 18px;
+    }
+
+    .top-section-mobile-app img {
+        max-width: 100%;
+        height: auto;
+    }
+}

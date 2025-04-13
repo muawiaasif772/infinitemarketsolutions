@@ -1,0 +1,111 @@
+.contact-cover {
+  position: relative;
+  background-image: url("../assets/image (7).png");
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 3rem;
+  background-color: #0C2647;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.contact-cover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(12, 38, 71, 0.75); /* Enhanced blue overlay */
+  z-index: 0;
+}
+
+.contact-cover h3,
+.contact-cover .btn-contact {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+
+}
+
+.contact-cover h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight:bold;
+}
+
+.contact-cover .btn-contact {
+  border: 3px solid white;
+  font-family: 'Roboto';
+  font-size: 30px;
+  text-align: center;
+  font-weight: 100 !important;
+  margin-top: 10px;
+  color: white;
+  border-radius: 12px;
+  /* padding: 2px 40px; */
+  background: transparent;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-cover .btn-contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: white;
+  transition: left 0.4s ease-in-out;
+  z-index: -1;
+}
+
+.contact-cover .btn-contact:hover {
+  color: #0C2647;
+  font-weight: bold;
+}
+
+.contact-cover .btn-contact:hover::before {
+  left: 0;
+}
+
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+  .contact-cover {
+    padding: 4rem 2rem; /* Adjusted padding for smaller screens */
+  }
+
+  .contact-cover h3 {
+    font-size: 1.5rem; /* Reduced font size for headings */
+    margin-bottom: 15px; /* Adjusted spacing */
+  }
+
+  .contact-cover .btn-contact {
+    font-size: 24px; /* Smaller button font size */
+    padding: 10px 30px; /* Adjusted padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-cover {
+    padding: 3rem 1rem; /* Further reduce padding on extra small screens */
+  }
+
+  .contact-cover h3 {
+    font-size: 1.2rem; /* Further reduce heading font size */
+    margin-bottom: 10px; /* Less margin for smaller screens */
+  }
+
+  .contact-cover .btn-contact {
+    font-size: 20px; /* Smaller font size for buttons */
+    padding: 8px 25px; /* Adjust button padding */
+  }
+}

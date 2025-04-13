@@ -1,0 +1,11 @@
+/* Heading styles */
+h1, h2, h3, h4 {
+	font-family: 'Manrope', sans-serif;
+	font-size: 25px;
+  }
+  
+  /* Global font for all other elements */
+  body, p, span, a, li, div, input, button, textarea, label {
+	font-family: 'Nunito', sans-serif;
+  }
+  

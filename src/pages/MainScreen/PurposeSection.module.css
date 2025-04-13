@@ -1,0 +1,133 @@
+.purposeSection {
+    background-color: #fafafa;
+    border: 1px solid #0000000d;
+    border-radius: 50px;
+    width: 1312px;
+    max-width: 100%;
+    margin-top: 80px;
+    padding: 54px 65px;
+  }
+  
+  @media (width<=991px) {
+    .purposeSection {
+      margin-top: 40px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  
+  .purposeContainer {
+    display: flex;
+    gap: 20px;
+  }
+  
+  @media (width<=991px) {
+    .purposeContainer {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  }
+  
+  .purposeContent {
+    color: #000;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: stretch;
+    font-family:
+      Roboto,
+      -apple-system,
+      Helvetica,
+      sans-serif;
+    display: flex;
+    width: 56%;
+  }
+  
+  @media (width<=991px) {
+    .purposeContent {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  
+  .sectionTitle {
+    align-self: start;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .sectionDescription {
+    margin-top: 16px;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 45px;
+  }
+  
+  @media (width<=991px) {
+    .sectionDescription {
+      max-width: 100%;
+    }
+  }
+  
+  .ctaContainer {
+    flex-direction: column;
+    align-self: stretch;
+    align-items: stretch;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family:
+      Roboto,
+      -apple-system,
+      Helvetica,
+      sans-serif;
+    display: flex;
+    width: 44%;
+    margin-left: 20px;
+  }
+  
+  @media (width<=991px) {
+    .ctaContainer {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 40px;
+      margin-left: 0;
+    }
+  }
+  
+  .ctaText {
+    color: #000;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0;
+  }
+  
+  @media (width<=991px) {
+    .ctaText {
+      max-width: 100%;
+    }
+  }
+  
+  .quoteButton {
+    color: #fff;
+    background-color: #000;
+    border-radius: 110px;
+    align-self: center;
+    width: 270px;
+    max-width: 100%;
+    margin-top: 29px;
+    padding: 20px 66px;
+    font-size: 26px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @media (width<=991px) {
+    .quoteButton {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  

@@ -1,0 +1,6 @@
+@mport "react-responsive-carousel/lib/styles/carousel.min.css";
+
+.carousel .control-dots .dot {
+	background-color: red !important; /* Change dot color to red */
+  }
+  

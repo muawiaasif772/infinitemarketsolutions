@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  margin: 0;
+  padding: 0px 0; /* Adjust padding to control spacing */
+}
+
+.homePage {
+    background-color: #fff;
+    flex-direction: column;
+    /* align-items: stretch; */
+    display: flex;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+  }
+  
+ .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Prevents extra space */
+  /* gap: 20px; Adjust this value to reduce spacing */
+}
+
+  
+  @media (width<=991px) {
+    .container {
+      max-width: 100%;
+    }
+  }
+  

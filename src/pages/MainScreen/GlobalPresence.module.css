@@ -1,0 +1,124 @@
+.globalPresence {
+  color: #fff;
+  background-color: #000;
+  flex-direction: column;
+  align-self: stretch;
+  align-items: center;
+  width: 100%;
+  margin-top: 65px;
+  padding: 50px 50px 20px;
+  font-family: Roboto, -apple-system, Helvetica, sans-serif;
+  display: flex;
+}
+
+@media (width<=991px) {
+  .globalPresence {
+    max-width: 100%;
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.contentContainer {
+  align-items: center;
+  width: 100%;
+  /* max-width: 1150px; */
+  display: flex;
+  justify-content: space-around;
+  /* gap:10 */
+}
+
+@media (width<=991px) {
+  .contentContainer {
+    max-width: 100%;
+    flex-direction: column;
+    gap: 80;
+  }
+}
+
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.8em;
+  font-family: Manrope, sans-serif;
+  /* margin: 0; */
+}
+
+@media (width<=991px) {
+  .sectionTitle {
+    max-width: 100%;
+    font-size: 14px;
+    padding-bottom: 12px;
+    text-align: center;
+    padding-top: 20px;
+  }
+}
+
+.description {
+  letter-spacing: 2.34px;
+  text-align: center;
+  /* align-self: stretch; */
+  /* margin-top: 22px; */
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  /* line-height: 43px; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: flex-start; */
+  max-width: 523px;
+  /* height: 200px; */
+  /* margin: auto; */
+  text-align: start;
+  font-family: Nunito, sans-serif;
+}
+
+@media (width<=991px) {
+  .description {
+    max-width: 50%;
+    font-size: 12px;
+    text-align: center;
+    /* font-weight: 300; */
+    margin: auto;
+  }
+}
+@media (width<=768px) {
+  .description {
+    max-width: 100%;
+    font-size: 12px;
+    text-align: center;
+    /* font-weight: 300; */
+    margin: auto;
+  }
+}
+.worldMap {
+  aspect-ratio: 1.78;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 0;
+  /* width: 70%; */
+  max-width: 30%;
+  /* margin: auto; */
+  /* flex:flex-end; */
+  /* margin-top: 50px; */
+  /* margin-bottom: 20px; */
+}
+@media (width<=991px) {
+  .worldMap {
+    max-width: 50%;
+  }
+}
+
+
+@media (max-width:468px) {
+  .worldMap {
+    max-width:80%;
+  }
+}
+.worldMap {
+  background: url("../../assets/map-world.png.png");
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: center;
+}

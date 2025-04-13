@@ -1,0 +1,184 @@
+/* Keep all existing styles intact */
+.person-card.active {
+  opacity: 1;
+}
+.person-card {
+  background-color: transparent;
+ 
+  border-radius: 10px;
+}
+
+.client-feedback-swiper {
+  position: relative; /* Ensures absolute positioning works */
+  width: 100%;
+  overflow: hidden;
+  /* padding: 0 10px; */
+}
+
+.stars,
+.person-name,
+.person-role {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2; /* Optional: tighter vertical spacing */
+}
+
+.swiper-slide img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  /* border-radius: 50%; */
+  transition: all 0.5s ease-in-out;
+  margin-bottom: 0;
+  
+}
+
+/* Default state for non-active slides */
+.swiper-slide:not(.swiper-slide-active) img {
+  opacity: 0.5;
+  /* filter: blur(4px); */
+}
+
+/* Active slide styling */
+.swiper-slide-active .person-card img,
+.swiper-slide-active img {
+  opacity: 1;
+  filter: none;
+  scale: 1.4;
+  /* margin-bottom: 23px; */
+}
+
+.testimonial-content {
+  transition: all 0.5s ease-in-out;
+}
+
+.testimonial-container {
+  text-align: center;
+  width: 100%;
+}
+
+.testimonial-header h2 {
+  font-weight: 400;
+}
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 250px; 
+  /* padding: 0 10px; */
+}
+
+/* Navigation Buttons */
+
+
+
+
+
+
+.person-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s ease;
+  opacity: 0.5;
+  gap: 1px; /* Add this for tight consistent spacing */
+}
+
+
+.carousel-track {
+  height: 250px;
+}
+
+.person-name {
+  font-size: 12px;
+  font-weight: semibold;
+  color: #94a3b8;
+  transition: all 0.5s ease;
+  /* margin-top: -10px; */
+ 
+}
+
+.person-card.active .person-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #38bdf8;
+  padding: 0;
+  margin: 0;
+}
+
+.person-role {
+  font-size: 12px;
+  color: #94a3b8;
+
+  transition: all 0.5s ease;
+}
+
+.person-card.active .person-role {
+  font-size: 12px;
+  color: #000;
+}
+/* 
+/* Additional styles for better responsiveness */
+@media (max-width: 768px) {
+  
+  
+
+  .carousel-container {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    height: 220px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .person-name.active,
+  .person-role.active {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .carousel-track {
+    /* height: 300px !important; */
+  }
+  .swiper-slide-active .person-card img,
+.swiper-slide-active img {
+  opacity: 1;
+  filter: none;
+  scale: 1.6;
+  /* margin-bottom: 23px; */
+}
+  /* Ensure swiper stays visible on small screens */
+  .swiper {
+    width: 70%;
+    padding: 10px 10px;
+  }
+  
+  /* Make sure active slides are properly visible on mobile */
+  .swiper-slide-active {
+    opacity: 1;
+  }
+  
+  
+}
+
+/* Fix for iOS and other mobile devices */
+@supports (-webkit-touch-callout: none) {
+  .swiper-slide-active .person-card img,
+  .swiper-slide-active img {
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+  }
+}
+
+
+@media (max-width: 350px) {
+    .testimonial-quaot {
+    padding-top: 2rem !important;
+      padding-bottom: 2rem !important;
+    }
+   }

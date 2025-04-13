@@ -1,0 +1,110 @@
+/* Tech Stack Section */
+.techStack {
+  text-align: center;
+  /* padding: 60px 5% 0; */
+  /* width: 1200px; */
+  padding: 50px 100px;
+  height: auto;
+  border-bottom: 1px solid #eaeaeaf7;
+}
+
+/* Section Title */
+.sectionTitle {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color:black;
+  /* text-transform: uppercase; */
+  font-family: Manrope, sans-serif;
+}
+
+/* Categories */
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 35px;
+  flex-wrap: wrap;
+  font-family: Nunito;
+}
+
+.category {
+  cursor: pointer;
+  color: #555;
+  transition: color 0.3s ease, transform 0.2s ease;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color:#F5F5F5;
+  border: 2px solid transparent;
+}
+
+.category:hover {
+  color: #007bff;
+  transform: scale(1.1);
+}
+
+.activeCate {
+  background-color:  #01a3f8;
+  color: white; /* Ensures text is visible */
+  font-weight: bold;
+}
+
+.activeCate:hover {
+  color: white; /* Keeps text visible on hover */
+}
+/* Tech Logos Grid */
+.techLogosTop
+ {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  /* margin-top: 60px; */
+  flex-wrap: wrap;
+  margin-bottom: 0px;
+}
+
+/* Tech Logos */
+.techLogo {
+  width: 100px;
+  /*height: 120px;
+  */object-fit: contain;
+  transition: transform 0.3s ease;
+  
+}
+
+
+.techLogo:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+@media (max-width: 991px) {
+  .techStack {
+    /* padding: 0 0; */
+    width: 100%;
+  }
+  .techLogosTop{
+    gap:50px;
+   justify-content: center;
+   /* padding: 12px 50; */
+  }
+  .sectionTitle{
+/* padding-top: 20px; */
+font-size: 20px;
+  }
+  .categories {
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 14px;
+  }
+
+  .techLogo {
+    width: 70px;
+    height: 70px;
+  }
+  
+}
+

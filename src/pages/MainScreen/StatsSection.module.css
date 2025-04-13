@@ -1,0 +1,216 @@
+.statsSection {
+    background-color: #eaf9ff;
+    width: 100%;
+    max-width: 1078px;
+    margin-top: 115px;
+  }
+  
+  @media (width<=991px) {
+    .statsSection {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  
+  .statsContainer {
+    gap: 20px;
+    display: flex;
+  }
+  
+  @media (width<=991px) {
+    .statsContainer {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  }
+  
+  .statCard {
+    flex-direction: column;
+    align-items: stretch;
+    width: 40%;
+    margin-left: 0;
+    line-height: normal;
+    display: flex;
+  }
+  
+  @media (width<=991px) {
+    .statCard {
+      width: 100%;
+    }
+  }
+  
+  .statContent {
+    color: #fff;
+    text-align: center;
+    background-color: #00a3f7;
+    flex-grow: 1;
+    align-items: stretch;
+    gap: 13px;
+    width: 100%;
+    padding: 32px 75px;
+    font-family:
+      Lato,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-weight: 800;
+    display: flex;
+  }
+  
+  @media (width<=991px) {
+    .statContent {
+      margin-top: 40px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  
+  .statIcon {
+    aspect-ratio: 0.97;
+    object-fit: contain;
+    object-position: center;
+    flex-shrink: 0;
+    width: 68px;
+  }
+  
+  .statInfo {
+    flex-direction: column;
+    align-self: start;
+    align-items: stretch;
+    margin-top: 4px;
+    display: flex;
+  }
+  
+  .statTitle {
+    font-size: 19px;
+    line-height: 1;
+    margin: 0;
+  }
+  
+  .statNumber {
+    align-self: start;
+    margin-top: 10px;
+    font-size: 38px;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+  
+  .statCard:nth-child(2) {
+    width: 21%;
+    margin-left: 20px;
+  }
+  
+  @media (width<=991px) {
+    .statCard:nth-child(2) {
+      width: 100%;
+    }
+  }
+  
+  .statCard:nth-child(2) .statContent {
+    text-align: center;
+    align-self: stretch;
+    align-items: stretch;
+    gap: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: transparent;
+  }
+  
+  @media (width<=991px) {
+    .statCard:nth-child(2) .statContent {
+      margin-top: 40px;
+    }
+  }
+  
+  .statCard:nth-child(2) .statIcon {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .statCard:nth-child(2) .statTitle {
+    color: #00a3f7;
+  }
+  
+  .statCard:nth-child(2) .statNumber {
+    color: #061e42;
+    margin-top: 5px;
+  }
+  
+  .statCard:nth-child(3) {
+    width: 39%;
+    margin-left: 20px;
+  }
+  
+  @media (width<=991px) {
+    .statCard:nth-child(3) {
+      width: 100%;
+    }
+  }
+  
+  .awardContent {
+    background-color: #00a3f7;
+    flex-grow: 1;
+    align-items: stretch;
+    gap: 11px;
+    width: 100%;
+    padding: 32px 73px;
+    display: flex;
+  }
+  
+  @media (width<=991px) {
+    .awardContent {
+      margin-top: 40px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  
+  .iconWrapper {
+    background-color: #eaf9ff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 69px;
+    height: 69px;
+    padding-left: 14px;
+    padding-right: 14px;
+    display: flex;
+  }
+  
+  .awardIcon {
+    aspect-ratio: 0.97;
+    object-fit: contain;
+    object-position: center;
+    width: 34px;
+  }
+  
+  .awardContent .statInfo {
+    color: #fff;
+    text-align: center;
+    flex-direction: column;
+    align-self: start;
+    align-items: stretch;
+    font-family:
+      Lato,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-weight: 800;
+    display: flex;
+  }
+  
+  .awardContent .statTitle {
+    align-self: start;
+    font-size: 19px;
+    line-height: 1;
+  }
+  
+  .awardContent .statNumber {
+    margin-top: 13px;
+    font-size: 38px;
+    line-height: 1;
+  }
+  

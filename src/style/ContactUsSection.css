@@ -1,0 +1,374 @@
+/* ContactSection.css */
+
+/* Main container styles */
+.cntct-section {
+	position: relative;
+	border-radius: 0;
+	width: 100%;
+	margin-top: -7%;
+
+	overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  .cntct-container {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	
+  }
+  
+  /* Background and overlay - ensure they're full width */
+  .cntct-background-image {
+	object-fit: cover;
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	left: 0;
+	right: 0;
+  }
+  
+  .cntct-background-overlay {
+	position: absolute;
+	inset: 0;
+	background-color: rgba(12, 38, 71, 0.8);
+	z-index: 10;
+	left: 0;
+	right: 0;
+	width: 100%;
+  }
+  
+  /* Content wrapper */
+  .cntct-content-wrapper {
+	position: relative;
+	padding: 2rem 0;
+	width: 100%;
+	z-index: 20;
+	box-sizing: border-box;
+  }
+  
+  @media (min-width: 640px) {
+	.cntct-content-wrapper {
+	  padding-left: 2rem;
+	  padding-right: 2rem;
+	}
+  }
+  
+  @media (min-width: 768px) {
+	.cntct-content-wrapper {
+	  padding-left: 4rem;
+	  padding-right: 4rem;
+	}
+  }
+  
+  @media (min-width: 1024px) {
+	.cntct-content-wrapper {
+	  padding-left: 6rem;
+	  padding-right: 6rem;
+	}
+  }
+  
+  @media (min-width: 1280px) {
+	.cntct-content-wrapper {
+	  padding-left: 8rem;
+	  padding-right: 8rem;
+	}
+  }
+  
+  .cntct-columns {
+	display: flex;
+	gap: 2rem;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+  }
+  
+  /* Contact Info Section */
+  .cntct-info-section {
+	width: 35%;
+	position: relative;
+	/* margin-top: 12px; */
+  }
+  
+  .cntct-info-container {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	color: white;
+	width: 100%;
+	flex: 1;
+	margin-top: 2rem;
+  }
+  
+  .cntct-info-heading {
+	font-size: 3rem;
+	font-weight: 300;
+	padding-bottom: 1.5rem; /* Space between heading and divider */
+	margin: 0;
+	display: inline-block;
+	text-align: left;
+	font-weight: lighter;
+  }
+  
+  /* Divider that starts from left screen edge and ends exactly at the width of the heading */
+  .cntct-info-section .cntct-divider {
+	position: absolute;
+	height: 1px;
+	background-color: white;
+	/* Calculate width from left edge to end of heading */
+	left: -50vw; /* Start from left edge of screen */
+	width: calc(45vw + 100%); /* Extend to full width of section */
+	transform-origin: left;
+	top: 40px;
+  }
+  
+  .cntct-vision-text {
+	font-size: 22px;
+	font-family: Manrope, sans-serif;
+	line-height: 1.7;
+	margin-top: 1.5rem;
+	font-weight: lighter;
+
+  }
+  
+  .cntct-talk-button {
+	padding: 5px 55px;
+	margin-top: 5px;
+	max-width: 100%;
+	font-size: 18px;
+	/*font-weight: lighter;
+	*/border-radius: 0.75rem;
+	border: 3px solid white;
+	transition: background-color 0.3s, color 0.3s;
+	-webkit-transition: background-color 0.3s, color 0.3s;
+	-moz-transition: background-color 0.3s, color 0.3s;
+	-ms-transition: background-color 0.3s, color 0.3s;
+	-o-transition: background-color 0.3s, color 0.3s;
+}
+  
+  .cntct-talk-button:hover {
+	background-color: white;
+	color: #0f284b;
+  }
+  
+  .cntct-questions-heading {
+	margin-top: 2rem;
+	font-size: 30px;
+	font-weight: 900;
+	line-height: 1.5;
+	font-family: Manrope, sans-serif;
+  }
+  
+  .cntct-questions-text {
+	margin-top: 1.25rem;
+	font-size: 18px;
+	/* line-height: 2.5rem; */
+	font-family: Nunito;
+	font-weight: lighter;
+  }
+  
+  /* Contact Form Section */
+  .cntct-form-section {
+	width: 65%;
+	padding: 0;
+	position: relative;
+  }
+  
+  .cntct-form-container {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	flex-grow: 1;
+	align-items: flex-start;
+	width: 100%;
+  }
+  
+  .cntct-form-heading {
+	font-size: 3rem;
+	font-weight: 300;
+	color: white;
+	text-align: left;
+	padding-bottom: 1.5rem; /* Space between heading and divider */
+	margin: 0;
+	display: inline-block;
+  }
+  
+  /* Divider that starts from right screen edge and ends at the width of the heading */
+ 
+  .cntct-form {
+	display: flex;
+	flex-direction: column;
+	padding: 1.5rem;
+	margin-top: 3rem;
+	max-width: 100%;
+	border-radius: 1.5rem;
+	border: 1px solid #38bdf8;
+	background-color: rgba(56, 189, 248, 0.2);
+	width: 100%;
+	-webkit-border-radius: 1.5rem;
+	-moz-border-radius: 1.5rem;
+	-ms-border-radius: 1.5rem;
+	-o-border-radius: 1.5rem;
+}
+  
+  .cntct-form-row {
+	margin-top: 0.5rem;
+	max-width: 100%;
+	display: flex;
+	gap: 1.25rem;
+	width: 100%;
+  }
+  
+  .cntct-form-column {
+	width: 50%;
+  }
+  
+  /* Form Input */
+  .cntct-form-input {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+  }
+  
+  .cntct-input-label {
+	align-self: flex-start;
+	font-size: 1rem;
+	/* line-height: 0.75rem; */
+	color: white;
+	margin-bottom: 0.4rem;
+  }
+  
+  .cntct-input-field {
+	display: flex;
+	flex-shrink: 0;
+	/*margin-top: 2.25rem;
+	*/background-color: white;
+	border-radius: 0.75rem;
+	height: 44px;
+	width: 100%;
+	-webkit-border-radius: 0.75rem;
+	-moz-border-radius: 0.75rem;
+	-ms-border-radius: 0.75rem;
+	-o-border-radius: 0.75rem;
+}
+  
+  /* Submit Button */
+  .cntct-submit-button {
+	z-index: 10;
+	align-self: center;
+	padding:8px 55px;
+	margin-top: 1.5rem;
+	font-size: 20px;
+	/*line-height: 1;
+	*/color: white;
+	white-space: nowrap;
+	background-color: #0ea5e9;
+	border-radius: 90px;
+	width: auto;
+	/*min-width: 198px;
+	*/text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*height: 60px;
+	*/transition: background-color 0.3s;
+	-webkit-transition: background-color 0.3s;
+	-moz-transition: background-color 0.3s;
+	-ms-transition: background-color 0.3s;
+	-o-transition: background-color 0.3s;
+}
+  
+  .cntct-submit-button:hover {
+	background-color: #0284c7;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+	.cntct-section {
+	  width: 100vw;
+	  left: 0;
+	  right: 0;
+	  margin: 0;
+	  padding: 0;
+	}
+	
+	.cntct-background-image,
+	.cntct-background-overlay {
+	  width: 100vw;
+	  left: 0;
+	  right: 0;
+	}
+	
+	.cntct-content-wrapper {
+	  /* padding-top: 4rem; */
+	  padding-bottom: 4rem;
+	  padding-left: 1.5rem;
+	  padding-right: 1.5rem;
+	  width: 100%;
+	  box-sizing: border-box;
+	}
+	
+	.cntct-columns {
+	  flex-direction: column;
+	  gap: 2rem;
+	}
+	
+	.cntct-info-section, 
+	.cntct-form-section {
+	  width: 100%;
+	  padding: 0;
+	}
+	
+	/* Adjust dividers for mobile view */
+	.cntct-info-section .cntct-divider {
+		display: none;
+	
+	}
+	
+	.cntct-form-section .cntct-divider {
+	 display: none;
+	}
+	
+	.cntct-info-container, 
+	.cntct-form-container {
+	  margin-top: 1rem;
+	}
+	
+	.cntct-info-heading, 
+	.cntct-form-heading {
+	  font-size: 2.25rem;
+	}
+	
+	.cntct-questions-heading {
+	  margin-top: 2rem;
+	  font-size: 24px;
+	  line-height: 1.5;
+	}
+	
+	.cntct-questions-text {
+	  font-size: 18px;
+	  line-height: 1.5;
+	}
+	
+	.cntct-form {
+	  padding: 1.25rem;
+	}
+	
+	.cntct-form-row {
+	  flex-direction: column;
+	}
+	
+	.cntct-form-column {
+	  width: 100%;
+	  margin-left: 0;
+	}
+	
+	.cntct-submit-button {
+	  padding: 0.5rem 2rem;
+	  font-size: 1.5rem;
+	  height: 50px;
+	}
+  }

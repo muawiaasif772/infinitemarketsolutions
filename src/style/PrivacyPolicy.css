@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.privacy-policy {
+  max-width: 70%;
+  margin: 20px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 10px 15px rgba(0, 0, 0, 0.1), inset 0 -4px 6px rgba(255, 255, 255, 0.8);
+  border-top: 10px solid #007bff;
+  padding: 20px 60px;
+  background-color: white;
+  transform: translateY(-100px);
+  font-family: 'Roboto';
+  color: #333;
+  line-height: 1.8;
+  overflow: hidden;
+}
+
+.privacy-image {
+  height: 280px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.privacy-policy h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 40px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 15px;
+  color: black;
+  font-weight: bold;
+}
+
+.privacy-policy h2 {
+  font-size: 26px;
+  margin: 30px 0 15px;
+  padding-top: 15px;
+  border-top: 2px solid #eee;
+  color: black;
+}
+
+.privacy-policy ul {
+  margin: 15px 0;
+  padding-left: 25px;
+}
+
+.privacy-policy li {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.effective-date {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .privacy-policy {
+    transform: translateY(0px);
+    box-shadow: none;
+    max-width: 100%;
+    width: 90%; /* Control width for better appearance */
+    border: none;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .privacy-policy h1 {
+    font-size: 28px;
+  }
+
+  .privacy-policy h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .privacy-policy {
+    width: calc(100% - 40px); /* This ensures 20px padding on each side */
+    padding: 16px 20px; /* 20px horizontal padding as requested */
+    margin: 0 auto;
+  }
+
+  .privacy-policy h1 {
+    font-size: 24px;
+  }
+
+  .privacy-policy h2 {
+    font-size: 20px;
+  }
+  .privacy-policy ul {
+    margin: 15px 0;
+    padding-left: 0px;
+  }
+  .privacy-policy li {
+    font-size: 15px;
+  }
+}

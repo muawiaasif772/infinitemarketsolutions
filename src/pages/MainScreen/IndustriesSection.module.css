@@ -1,0 +1,146 @@
+.industriesContainer {
+  width: 100%;
+  padding: 50px 90px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title {
+  color: #000;
+  margin-bottom: 10px;
+  font-family: Manrope;
+  font-size: 25px;
+  font-weight: 700;
+}
+.icon{
+  width: 48px;
+  height: 48px;
+  margin-bottom: 12px !important;
+  /* text-align: cente; */
+  margin:auto
+}
+@media (max-width: 991px) {
+  .title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .title {
+    font-size: 18px;
+  }
+}
+
+.subtitle {
+  color: #000;
+  font-family: Nunito;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 42px;
+}
+
+@media (max-width: 991px) {
+  .subtitle {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .subtitle {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px; /* Add a gap between the cards */
+}
+
+.card {
+  text-align: center;
+  padding: 25px;
+  border-radius: 21px;
+  transition: background-color 0.3s ease-in-out;
+  
+ 
+}
+
+/* Responsive: Adjust for 1 column on mobile */
+@media (max-width: 580px) {
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+  .icon {
+   /* margin: auto; */
+    text-align: start !important;
+    
+    /* padding-bottom: 20px; */
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .industriesContainer{
+    padding: 20px 40px;
+   
+  }
+  .card{
+    /* text-align: left; */
+  }
+.icon{
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+  text-align: start;
+}
+}
+@media (max-width: 900px) {
+  
+  .industriesContainer{
+    padding: 20px 40px;
+   
+  }
+  .grid{
+    gap: 20px;
+  }
+  
+
+}
+
+
+.cardTitle {
+  color: #000;
+  padding-bottom: 20px;
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .cardTitle {
+    font-size: 16px;
+    padding-bottom: 7px;
+  }
+}
+
+.cardDescription {
+  color: #000;
+  font-family: Manrope, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .cardDescription {
+    font-size: 14px;
+  }
+}
